@@ -1,28 +1,8 @@
-# create-react-library
+# vfs-create-widget
 
-> CLI for creating reusable, modern React libraries using Rollup and create-react-app.
+> CLI for creating react widgets and connect them to VFS Azure feed
 
-[![NPM](https://img.shields.io/npm/v/create-react-library.svg)](https://www.npmjs.com/package/create-react-library) [![Build Status](https://travis-ci.com/transitive-bullshit/create-react-library.svg?branch=master)](https://travis-ci.com/transitive-bullshit/create-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
----
-
-<div align="center">
-	<a href="https://saasify.sh" title="Saasify">
-		<div>
-      <img src="https://docs.saasify.sh/_media/logo.png" alt="Saasify Logo" width="200" />
-		</div>
-    <sup>This project is sponsored by Saasify.</sup><br />
-		<sup><b>The easiest way to monetize your APIs</b></sup>
-	</a>
-</div>
-
----
-
-## Intro
-
-<p align="center">
-  <img width="600" src="https://cdn.rawgit.com/transitive-bullshit/create-react-library/master/media/demo.svg">
-</p>
+Credits: based on the project from [Travis Fischer](https://github.com/transitive-bullshit) named [create-react-library](https://github.com/transitive-bullshit/create-react-library)
 
 ## Features
 
@@ -35,11 +15,7 @@
 - [Jest](https://facebook.github.io/jest/) for testing
 - Supports complicated peer-dependencies
 - Supports CSS modules
-- Optional support for TypeScript
 - Sourcemap creation
-- Thousands of public modules created
-- Thorough documentation :heart_eyes:
-- [Chinese docs](./readme.zh-CN.md) by [@monsterooo](https://github.com/monsterooo)
 
 ## Install globally
 
@@ -60,15 +36,13 @@ _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7
 ## Creating a New Module
 
 ```bash
-create-react-library
+vfs-create-widget
 ```
 
 Answer some basic prompts about your module, and then the CLI will perform the following steps:
 
 - copy over the template
-- install dependencies via yarn or npm
 - link packages together for local development
-- initialize local git repo
 
 At this point, your new module should resemble this screenshot and is all setup for local development.
 
@@ -96,11 +70,10 @@ npm start # runs create-react-app dev server
 
 Now, anytime you make a change to your library in `src/` or to the example app's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your component in real-time.
 
-![](https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif)
-
-#### Publishing to npm
+#### Publishing to Azure feed
 
 ```bash
+npm version <new_version>
 npm publish
 ```
 
@@ -108,13 +81,6 @@ This builds `commonjs` and `es` versions of your module to `dist/` and then publ
 
 Make sure that any npm modules you want as peer dependencies are properly marked as `peerDependencies` in `package.json`. The rollup config will automatically recognize them as peers and not try to bundle them in your module.
 
-#### Deploying to Github Pages
-
-```bash
-npm run deploy
-```
-
-This creates a production build of the example `create-react-app` that showcases your library and then runs `gh-pages` to deploy the resulting bundle.
 
 ## Use with React Hooks
 
