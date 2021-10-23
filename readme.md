@@ -70,7 +70,7 @@ npm start # runs create-react-app dev server
 
 Now, anytime you make a change to your library in `src/` or to the example app's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your component in real-time.
 
-#### Publishing to Azure feed
+### Publishing to Azure feed
 
 ```bash
 npm version <new_version>
@@ -127,8 +127,3 @@ Want to add yours to the list? Submit an [PR](https://github.com/HurricaneIntera
 
 My open source efforts are now focused on [Saasify](https://github.com/saasify-sh/saasify), and I am not able to invest a significant amount of time into maintaining CRL anymore. I am looking for volunteers who would like to become active maintainers on the project. If you are interested, please shoot me a note.
 
-## License
-
-MIT © [Travis Fischer](https://github.com/transitive-bullshit)
-
-Support my OSS work by <a href="https://twitter.com/transitive_bs">following me on twitter <img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>
