@@ -70,7 +70,7 @@ npm start # runs create-react-app dev server
 
 Now, anytime you make a change to your library in `src/` or to the example app's `example/src`, `create-react-app` will live-reload your local dev server so you can iterate on your component in real-time.
 
-### Publishing to Azure feed
+## Publishing to Azure feed
 
 ```bash
 npm version <new_version>
@@ -100,30 +100,4 @@ Here is a [branch](https://github.com/transitive-bullshit/react-modern-library-b
 
 The CLI is based on this [boilerplate](https://github.com/transitive-bullshit/react-modern-library-boilerplate), which you can optionally read about [here](https://hackernoon.com/publishing-baller-react-modules-2b039d84bce7).
 
-### Libraries
-
-Here are some example libraries that have been bootstrapped with `create-react-library`.
-
-- [tabler-react](https://github.com/tabler/tabler-react) - React components and demo for the Tabler UI theme.
-- [react-background-slideshow](https://github.com/transitive-bullshit/react-background-slideshow) - Sexy tiled background slideshow for React 🔥
-- [react-starfield-animation](https://github.com/transitive-bullshit/react-starfield-animation) -Canvas-based starfield animation for React ✨
-- [react-particle-effect-button](https://github.com/transitive-bullshit/react-particle-effect-button) - Bursting particle effect buttons for React 🎉
-- [react-particle-animation](https://github.com/transitive-bullshit/react-particle-animation) - Canvas-based particle animation for React 🌐
-- [react-block-image](https://github.com/transitive-bullshit/react-block-image) - React replacement for img with more control + fallback support 🌃
-- [react-mp3-recorder](https://github.com/transitive-bullshit/react-mp3-recorder) - Microphone recorder for React that captures mp3 audio 🎵
-- [react-before-after-slider](https://github.com/transitive-bullshit/react-before-after-slider) - A sexy image comparison slider for React.
-- [worldwind-react-globe](https://github.com/emxsys/worldwind-react-globe) - NASA WorldWind globe component for React.
-- [react-shimmer](https://github.com/gokcan/react-shimmer) - Shimmer effect for loading images.
-- [react-login-modal-sm](https://github.com/Silind/react-login-modal-sm) - Customizable React social media login modal.
-- [react-gradient-scroll-indicator](https://github.com/jbccollins/react-gradient-scroll-indicator) - Wrapper for scrollable content with gradients.
-- [react-editext](https://github.com/alioguzhan/react-editext) - Editable Text Component.
-- ... and hundreds more!
-
-Want to see a more completed list? Check out [Made with CRL](https://made-with-crl.netlify.com/).
-
-Want to add yours to the list? Submit an [PR](https://github.com/HurricaneInteractive/made-with-crl#adding-a-library) at the _Made with CRL_ repository.
-
-## Notice
-
-My open source efforts are now focused on [Saasify](https://github.com/saasify-sh/saasify), and I am not able to invest a significant amount of time into maintaining CRL anymore. I am looking for volunteers who would like to become active maintainers on the project. If you are interested, please shoot me a note.
 
